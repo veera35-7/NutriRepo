@@ -9,7 +9,18 @@ const foodRoutes = require("./routes/foodRoutes");
 
 const app = express();
 
-app.use(cors());
+// CORS configuration
+const corsOptions = {
+  origin: [
+    "http://localhost:3000",
+    "https://nutri-repo-6gfoqrhc5-shamir-57s-projects.vercel.app",
+    "https://nutri-repo-6gfoqrhc5-shamir-57s-projects.vercel.app/"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use("/uploads", express.static("uploads"));
 
