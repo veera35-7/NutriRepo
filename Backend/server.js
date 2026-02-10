@@ -13,6 +13,7 @@ const app = express();
 const corsOptions = {
   origin: [
     "http://localhost:3000",
+    "http://localhost:3001",
     "http://192.168.1.39:3000",
     "https://nutri-repo-i5853711p-shamir-57s-projects.vercel.app",
     "https://nutri-repo-i5853711p-shamir-57s-projects.vercel.app/"
