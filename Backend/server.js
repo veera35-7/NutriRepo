@@ -13,8 +13,9 @@ const app = express();
 const corsOptions = {
   origin: [
     "http://localhost:3000",
-    "https://nutri-repo-6gfoqrhc5-shamir-57s-projects.vercel.app",
-    "https://nutri-repo-6gfoqrhc5-shamir-57s-projects.vercel.app/"
+    "http://192.168.1.39:3000",
+    "https://nutri-repo-i5853711p-shamir-57s-projects.vercel.app",
+    "https://nutri-repo-i5853711p-shamir-57s-projects.vercel.app/"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
